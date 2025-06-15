@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serdce - Брачное агенство</title>
+    <style>
+        /* Общие стили */бдд
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Фиксированное меню (position: fixed) */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #280626;
+            color: white;
+            padding: 15px 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .navbar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+        
+        /* Липкий заголовок (position: sticky) */
+        .page-header {
+            position: sticky;
+            top: 60px; /* Учитываем высоту фиксированного меню */
+            background-color: #ff72ad;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            z-index: 100;
+        }
+        
+        /* Основное содержимое */
+        .main-content {
+            padding: 100px 0 50px;
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Блок с относительным и абсолютным позиционированием */
+        .hero {
+            position: relative;
+            height: 400px;
+            background-color: #ff72ad;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 40px;
+            background-image: url('https://via.placeholder.com/1200x400');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            width: 80%;
+        }
+        
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+     
+        
+        /* Подвал */
+        footer {
+            background-color: #280626;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Фиксированное меню -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">SERDCE</div>
+            <ul class="nav-links">
+                <li><a href="date agency.html">Главная</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="about us.html">О нас</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Липкий заголовок -->
+    <header class="page-header" id="home">
+        <h1>Крупнейшее брачное
+            агентство в Махачкале</h1>
+    </header>
+    
+    <div class="main-content">
+        <!-- Блок с относительным и абсолютным позиционированием -->
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Состоялось уже более 10 000 союзов за 12+ лет работы нашей компании</h1>
+                <p>"Если Вы еще одиноки и мечтаете найти свою вторую половинку и быть такими же счастливыми как мы, то обращайтесь в агенство Serdce, где работают настоящие профессионалы, которые помогут Вам обрести свое счастье!"</p>
+            </div>
+        </section>
+        
+ 
+    <!-- Подвал -->
+    <footer id="contact">
+        <div class="footer-content">
+            <h3>Контакты</h3>
+            <p style="margin: 20px 0;">367026, г. Махачкала,
+                ул. Хизроева</p>
+            <p>Телефон: +7 (999) 333-29-52</p>
+            <p style="margin: 20px 0;">E-mail: 05@Serdcegroup.ru</p>
+            <p>© 2025 Serdce. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
